@@ -20,11 +20,13 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Index()
         {
+            ViewData["show"] = "Brincadeira Começou";
             return View();
         }
 
         public IActionResult Privacy()
         {
+            ViewData["email"] = "teste@teste.com.br";
             return View();
         }
 
