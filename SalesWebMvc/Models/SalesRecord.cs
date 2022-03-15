@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWebMvc.Models.Enums;
 
 namespace SalesWebMvc.Models
 {
@@ -14,7 +15,10 @@ namespace SalesWebMvc.Models
 
         public Seller Seller { get; set; }
 
-     
+        public SalesRecord()
+        {
+
+        }
         public SalesRecord(int id, DateTime data, double amount, SalesStatus status, Seller seller)
         {
             Id = id;
