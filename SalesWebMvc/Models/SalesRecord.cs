@@ -12,7 +12,7 @@ namespace SalesWebMvc.Models
         public int Id { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime Date { get; set; }
+        public DateTime Data { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:F2}")]
         public double Amount { get; set; }
@@ -23,10 +23,10 @@ namespace SalesWebMvc.Models
         {
         }
 
-        public SalesRecord(int id, DateTime date, double amount, SalesStatus status, Seller seller)
+        public SalesRecord(int id, DateTime data, double amount, SalesStatus status, Seller seller)
         {
             Id = id;
-            Date = date;
+            Data = data;
             Amount = amount;
             Status = status;
             Seller = seller;

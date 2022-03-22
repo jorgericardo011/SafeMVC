@@ -38,13 +38,12 @@ namespace SalesWebMvc.Controllers
             return View(result);
         }
 
-        public async Task<IActionResult> GroupingSearchAsync(DateTime? minDate, DateTime? maxDate)
+        public async Task<IActionResult> GroupingSearch(DateTime? minDate, DateTime? maxDate)
         {
             if (!minDate.HasValue)
             {
                 minDate = new DateTime(DateTime.Now.Year, 1, 1);
             }
-
             if (!maxDate.HasValue)
             {
                 maxDate = DateTime.Now;
